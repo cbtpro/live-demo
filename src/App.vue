@@ -3,21 +3,30 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import HelloWorld from './components/HelloWorld.vue'
 import { RouterView } from 'vue-router';
+import MainMenu from '@/components/MainMenu.vue';
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <!-- <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" /> -->
-  <RouterView />
+  <div class="container">
+    <div class="left">
+      <main-menu />
+    </div>
+    <div class="content">
+      <RouterView />
+    </div>
+  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="less" scoped>
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  .left {
+    width: 100px;
+  }
+  .content {
+    flex: 1;
+  }
 }
 </style>
