@@ -1,17 +1,20 @@
 <template>
     <div class="main-menu">
         <ul class="menu">
-            <li class="item">
-                <RouterLink to="/">Home</RouterLink>
-            </li>
-            <li class="item">
-                <RouterLink to="/about">About</RouterLink>
+            <li
+                v-for="route in routes"
+                :key="route.path" class="item"
+            >
+                <RouterLink :to="route.path">{{ route.meta.title }}</RouterLink>
+                
             </li>
         </ul>
     </div>
 </template>
 
 <script setup lang="ts">
+import { routes } from '@/routers';
+
 defineOptions({
     name: 'main-menu',
 });

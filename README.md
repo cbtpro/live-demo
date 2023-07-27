@@ -5,6 +5,7 @@
 您可以在底部点击【终端】标签打开终端界面
 
 ## 构建和运行
+
 输入以下命令来构建和运行项目：
 
 ``` bash
@@ -16,8 +17,15 @@ yarn dev
 ```
 
 ## 预览项目
+
 项目运行后将会启动服务，系统检测到端口会提示添加，您可以点击左侧文件树 -> “网络”标签 -> 端口预览按钮 打开访问地址。
 
 ## 了解更多
+
 - 查看我们的产品文档(https://lightly.teamcode.com/docs/introduction)，了解更多信息。
+
 - 查看Vue官网文档(https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup)，了解更多信息。 
+
+## .editorconfig
+
+增加.editorconfig配置，用来规范跨各种编辑器和IDE的不同开发人员的编码风格。
