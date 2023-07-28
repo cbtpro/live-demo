@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { routes } from '@/routers';
+import { routes } from '@/routes';
 
 defineOptions({
   name: 'main-menu',
