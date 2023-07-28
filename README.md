@@ -22,10 +22,35 @@ yarn dev
 
 ## 了解更多
 
-- 查看我们的产品文档(https://lightly.teamcode.com/docs/introduction)，了解更多信息。
+- 查看我们的产品文档([https://lightly.teamcode.com/docs/introduction](https://lightly.teamcode.com/docs/introduction))，了解更多信息。
 
-- 查看Vue官网文档(https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup)，了解更多信息。
+- 查看Vue官网文档([https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup))，了解更多信息。
 
 ## .editorconfig
 
 增加.editorconfig配置，用来规范跨各种编辑器和IDE的不同开发人员的编码风格。
+
+## 增加husky
+
+> prettier.cn/docs/install.html
+
+1. 安装husky和lint-staged依赖
+
+```shell
+npm install --save-dev --save-exact husky lint-staged
+npx husky install
+npm pkg set scripts.prepare="husky install"
+npx husky add .husky/pre-commit "npx lint-staged"
+```
+
+2. 向`package.json`中添加下面的配置代码
+
+```json
+{
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
+```
+
+> 注意：如果打算使用ESlint，要确保lint-staged在Prettier之前运行。
