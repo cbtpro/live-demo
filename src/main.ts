@@ -1,8 +1,8 @@
-import { createApp } from 'vue'
+import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import router from './routers';
 import mainCommon from './main.common';
-import App from './App.vue'
+import App from './App.vue';
 import '@/assets/styles.less';
 
 const pinia = createPinia();
@@ -13,4 +13,4 @@ mainCommon.init(app);
 app.use(pinia);
 app.use(router);
 
-app.mount('#app')
+app.mount('#app');

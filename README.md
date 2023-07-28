@@ -1,4 +1,4 @@
-# 如何在Lightly中构建和运行 Vue-TypeScript 项目 
+# 如何在Lightly中构建和运行 Vue-TypeScript 项目
 
 ## 打开终端
 
@@ -8,7 +8,7 @@
 
 输入以下命令来构建和运行项目：
 
-``` bash
+```bash
 # 构建项目
 yarn
 
@@ -24,7 +24,7 @@ yarn dev
 
 - 查看我们的产品文档(https://lightly.teamcode.com/docs/introduction)，了解更多信息。
 
-- 查看Vue官网文档(https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup)，了解更多信息。 
+- 查看Vue官网文档(https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup)，了解更多信息。
 
 ## .editorconfig
 

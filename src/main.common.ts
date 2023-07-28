@@ -1,7 +1,5 @@
 import { App } from 'vue';
 
 export default {
-    init(app: App<Element>) {
-        
-    }
-}
+  init(app: App<Element>) {},
+};

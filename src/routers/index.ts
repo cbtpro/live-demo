@@ -4,18 +4,18 @@ import Home from '@/views/index.vue';
 
 export const routes: RouteRecordRaw[] = [
   {
-      name: 'home',
-      path: '/',
-      meta: {
-        title: '首页'
-      },
-      component: Home,
+    name: 'home',
+    path: '/',
+    meta: {
+      title: '首页',
+    },
+    component: Home,
   },
   {
     name: 'scroll',
     path: '/scroll',
     meta: {
-      title: 'scroll事件'
+      title: 'scroll事件',
     },
     component: () => import('@/views/scroll/scroll.vue'),
   },
@@ -23,12 +23,11 @@ export const routes: RouteRecordRaw[] = [
     name: 'about',
     path: '/about',
     meta: {
-      title: '关于'
+      title: '关于',
     },
     component: () => import('@/views/about.vue'),
-  }
+  },
 ];
-
 
 export default createRouter({
   history: createWebHashHistory(),

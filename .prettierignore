@@ -1,0 +1,6 @@
+# Ignore artifacts
+build
+coverage
+
+# 暂时还没有准备好格式化html
+*.html
