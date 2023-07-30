@@ -1,0 +1,406 @@
+{
+  "name": "大数据",
+  "theme_code": "prd000025fjk",
+  "children": [
+    {
+      "name": "左边",
+      "code": "left",
+      "children": [
+        {
+          "name": "上游",
+          "node_code": "prd100000100",
+          "children": [
+            {
+              "name": "硬件设备",
+              "node_code": "prd000025ofs",
+              "children": [
+                {
+                  "name": "服务器",
+                  "node_code": "prd000000017",
+                  "children": [],
+                  "companyNum": 381,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd000025ofs",
+                  "order": 381
+                },
+                {
+                  "name": "光模块",
+                  "node_code": "prd000001542",
+                  "children": [],
+                  "companyNum": 222,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd000025ofs",
+                  "order": 222
+                },
+                {
+                  "name": "交换机",
+                  "node_code": "prd000001713",
+                  "children": [],
+                  "companyNum": 439,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd000025ofs",
+                  "order": 439
+                }
+              ],
+              "companyNum": 0,
+              "childrenCompanyNum": 1042,
+              "nodeNum": 0,
+              "parentnode": "prd100000100",
+              "order": 0
+            },
+            {
+              "name": "基础设备",
+              "node_code": "prd100001656",
+              "children": [
+                {
+                  "name": "基础软件",
+                  "node_code": "prd000000205",
+                  "children": [],
+                  "companyNum": 136,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd100001656",
+                  "order": 136
+                },
+                {
+                  "name": "电力设备",
+                  "node_code": "prd000015345",
+                  "children": [],
+                  "companyNum": 677,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd100001656",
+                  "order": 677
+                },
+                {
+                  "name": "网络运营商",
+                  "node_code": "prd100004120",
+                  "children": [],
+                  "companyNum": 76,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd100001656",
+                  "order": 76
+                }
+              ],
+              "companyNum": 0,
+              "childrenCompanyNum": 889,
+              "nodeNum": 0,
+              "parentnode": "prd100000100",
+              "order": 0
+            },
+            {
+              "name": "数据中心建设",
+              "node_code": "prd000000452",
+              "children": [],
+              "companyNum": 20,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000100",
+              "order": 20
+            },
+            {
+              "name": "大数据平台",
+              "node_code": "prd000025mbq",
+              "children": [],
+              "companyNum": 83,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000100",
+              "order": 83
+            }
+          ],
+          "companyNum": 0,
+          "childrenCompanyNum": 2034,
+          "nodeNum": 0,
+          "order": 0
+        }
+      ],
+      "companyNum": 0,
+      "childrenCompanyNum": 2034,
+      "nodeNum": 0,
+      "order": 0
+    },
+    {
+      "name": "右边",
+      "code": "right",
+      "children": [
+        {
+          "name": "中游",
+          "node_code": "prd100000101",
+          "children": [
+            {
+              "name": "大数据处理服务",
+              "node_code": "prd000026xqg",
+              "children": [],
+              "companyNum": 11,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000101",
+              "order": 11
+            },
+            {
+              "name": "大数据采集服务",
+              "node_code": "prd000026xqf",
+              "children": [
+                {
+                  "name": "物联网",
+                  "node_code": "prd000017932",
+                  "children": [],
+                  "companyNum": 4160,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd000026xqf",
+                  "order": 4160
+                },
+                {
+                  "name": "互联网",
+                  "node_code": "prd100001658",
+                  "children": [],
+                  "companyNum": 2770,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd000026xqf",
+                  "order": 2770
+                }
+              ],
+              "companyNum": 85,
+              "childrenCompanyNum": 6930,
+              "nodeNum": 0,
+              "parentnode": "prd100000101",
+              "order": 85
+            },
+            {
+              "name": "数据存储及云平台",
+              "node_code": "prd100001659",
+              "children": [
+                {
+                  "name": "存储硬件设备",
+                  "node_code": "prd100001661",
+                  "children": [],
+                  "companyNum": 89,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd100001659",
+                  "order": 89
+                },
+                {
+                  "name": "IaaS",
+                  "node_code": "prd000025get",
+                  "children": [],
+                  "companyNum": 334,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd100001659",
+                  "order": 334
+                },
+                {
+                  "name": "IDC",
+                  "node_code": "prd000020605",
+                  "children": [],
+                  "companyNum": 130,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd100001659",
+                  "order": 130
+                },
+                {
+                  "name": "云服务",
+                  "node_code": "prd000014123",
+                  "children": [],
+                  "companyNum": 153,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd100001659",
+                  "order": 153
+                }
+              ],
+              "companyNum": 303,
+              "childrenCompanyNum": 706,
+              "nodeNum": 0,
+              "parentnode": "prd100000101",
+              "order": 303
+            },
+            {
+              "name": "大数据分析服务",
+              "node_code": "prd000026xqh",
+              "children": [
+                {
+                  "name": "大数据分析软件",
+                  "node_code": "prd100006059",
+                  "children": [],
+                  "companyNum": 15,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd000026xqh",
+                  "order": 15
+                },
+                {
+                  "name": "SaaS",
+                  "node_code": "prd000025gek",
+                  "children": [],
+                  "companyNum": 31,
+                  "childrenCompanyNum": 0,
+                  "nodeNum": 0,
+                  "parentnode": "prd000026xqh",
+                  "order": 31
+                }
+              ],
+              "companyNum": 8,
+              "childrenCompanyNum": 46,
+              "nodeNum": 0,
+              "parentnode": "prd100000101",
+              "order": 8
+            },
+            {
+              "name": "IDC服务",
+              "node_code": "prd000017908",
+              "children": [],
+              "companyNum": 21,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000101",
+              "order": 21
+            },
+            {
+              "name": "数据安全",
+              "node_code": "prd000025m5a",
+              "children": [],
+              "companyNum": 90,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000101",
+              "order": 90
+            }
+          ],
+          "companyNum": 0,
+          "childrenCompanyNum": 8200,
+          "nodeNum": 0,
+          "order": 0
+        },
+        {
+          "name": "下游",
+          "node_code": "prd100000102",
+          "children": [
+            {
+              "name": "政务大数据",
+              "node_code": "prd000025m7v",
+              "children": [],
+              "companyNum": 1,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000102",
+              "order": 1
+            },
+            {
+              "name": "金融大数据",
+              "node_code": "prd000025ob3",
+              "children": [],
+              "companyNum": 6,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000102",
+              "order": 6
+            },
+            {
+              "name": "零售大数据",
+              "node_code": "prd000026xqj",
+              "children": [],
+              "companyNum": 0,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000102",
+              "order": 0
+            },
+            {
+              "name": "工业大数据",
+              "node_code": "prd000025fyx",
+              "children": [],
+              "companyNum": 7,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000102",
+              "order": 7
+            },
+            {
+              "name": "电信大数据",
+              "node_code": "prd000025fyu",
+              "children": [],
+              "companyNum": 2,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000102",
+              "order": 2
+            },
+            {
+              "name": "医疗大数据",
+              "node_code": "prd000026xqk",
+              "children": [],
+              "companyNum": 10,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000102",
+              "order": 10
+            },
+            {
+              "name": "传媒大数据",
+              "node_code": "prd000026xqi",
+              "children": [],
+              "companyNum": 25,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000102",
+              "order": 25
+            },
+            {
+              "name": "交通大数据",
+              "node_code": "prd000025oez",
+              "children": [],
+              "companyNum": 3,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000102",
+              "order": 3
+            },
+            {
+              "name": "能源大数据",
+              "node_code": "prd000025ob5",
+              "children": [],
+              "companyNum": 5,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000102",
+              "order": 5
+            },
+            {
+              "name": "环境大数据",
+              "node_code": "prd000025obb",
+              "children": [],
+              "companyNum": 2,
+              "childrenCompanyNum": 0,
+              "nodeNum": 0,
+              "parentnode": "prd100000102",
+              "order": 2
+            }
+          ],
+          "companyNum": 0,
+          "childrenCompanyNum": 61,
+          "nodeNum": 0,
+          "order": 1
+        }
+      ],
+      "companyNum": 0,
+      "childrenCompanyNum": 8261,
+      "nodeNum": 0,
+      "order": 0
+    }
+  ],
+  "companyNum": 9548,
+  "childrenCompanyNum": 0,
+  "nodeNum": 31,
+  "dataPoints": "大数据产业链主要包括上游电力设备、交换机、服务器，中游物联网、互联网、IaaS，下游传媒大数据、医疗大数据、工业大数据。目前，广东省深圳市大数据企业主要集中在物联网、互联网、电力设备、交换机、服务器等领域。",
+  "order": 9548
+}

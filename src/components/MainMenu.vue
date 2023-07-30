@@ -9,11 +9,11 @@
 </template>
 
 <script setup lang="ts">
-import { routes } from '../router';
+import { routes } from '../router'
 
 defineOptions({
   name: 'main-menu',
-});
+})
 </script>
 
 <style lang="less" scoped>

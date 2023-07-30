@@ -1,10 +1,10 @@
-import { defineStore } from 'pinia';
-import { ref } from 'vue';
+import { defineStore } from 'pinia'
+import { ref } from 'vue'
 
 const useCountStore = defineStore('count', () => {
-  const count = ref(0);
+  const count = ref(0)
 
-  return { count };
-});
+  return { count }
+})
 
-export default useCountStore;
+export default useCountStore

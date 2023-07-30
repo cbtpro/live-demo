@@ -5,7 +5,7 @@
 <script setup lang="ts">
 defineOptions({
   name: 'view-about',
-});
+})
 </script>
 
 <style lang="less" scoped>
