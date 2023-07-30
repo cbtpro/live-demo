@@ -26,7 +26,6 @@ import MainMenu from '@/components/MainMenu.vue'
     width: 100px;
   }
   .content {
-    flex: 1;
   }
 }
 </style>

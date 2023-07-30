@@ -20,6 +20,9 @@ declare namespace Topo {
     order: number
   }
 
+  /**
+   * topoJSON类型
+   */
   interface TopoJSON {
     name: string
     theme_code: string

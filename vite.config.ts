@@ -1,10 +1,16 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    vueJsx({
+      // options are passed on to @vue/babel-plugin-jsx
+    }),
+  ],
   /** 新建项目第一步，设置base为'./'，打包后的assets以'./'开头,可以将项目部署在任何目录 */
   base: './',
   resolve: {
