@@ -20,6 +20,14 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('@/views/scroll/scroll.vue'),
   },
   {
+    name: 'geojson',
+    path: '/geojson',
+    meta: {
+      title: 'd3绘制geojson图',
+    },
+    component: () => import('@/views/geojson/geojson.vue'),
+  },
+  {
     name: 'about',
     path: '/about',
     meta: {
@@ -29,7 +37,9 @@ export const routes: RouteRecordRaw[] = [
   },
 ];
 
-export default createRouter({
+const router = createRouter({
   history: createWebHashHistory(),
   routes,
 });
+
+export default router;
