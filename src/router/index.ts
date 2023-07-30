@@ -20,6 +20,14 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('@/views/scroll/scroll.vue'),
   },
   {
+    name: 'topojson',
+    path: '/topojson',
+    meta: {
+      title: 'd3绘制topojson图',
+    },
+    component: () => import('@/views/topojson/topojson.vue'),
+  },
+  {
     name: 'geojson',
     path: '/geojson',
     meta: {
@@ -32,6 +40,7 @@ export const routes: RouteRecordRaw[] = [
     path: '/about',
     meta: {
       title: '关于',
+      requiresAuth: false,
     },
     component: () => import('@/views/about.vue'),
   },

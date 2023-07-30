@@ -2,14 +2,14 @@
   <div class="main-menu">
     <ul class="menu">
       <li v-for="route in routes" :key="route.path" class="item">
-        <RouterLink :to="route.path">{{ route.meta.title }}</RouterLink>
+        <RouterLink :to="route.path">{{ route.meta?.title }}</RouterLink>
       </li>
     </ul>
   </div>
 </template>
 
 <script setup lang="ts">
-import { routes } from '@/routes';
+import { routes } from '../router';
 
 defineOptions({
   name: 'main-menu',
