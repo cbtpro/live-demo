@@ -54,3 +54,33 @@ npx husky add .husky/pre-commit "npx lint-staged"
 ```
 
 > 注意：如果打算使用ESlint，要确保lint-staged在Prettier之前运行。
+
+## 增加`@trivago/prettier-plugin-sort-imports`对导入进行排序
+
+1. 安装依赖
+
+```shell
+npm install --save-dev @trivago/prettier-plugin-sort-imports
+```
+
+2. 配置`prettierrc.json5`
+
+```json
+  importOrder: [
+    '<THIRD_PARTY_MODULES>',
+    '^@components/(.*)$',
+    '^@(.*)',
+    '^[./]',
+  ],
+  // 导入之间的分隔空行
+  importOrderSeparation: false,
+```
+
+2. 执行命令
+
+```shell
+prettier --write . --plugin-search-dir=./node_modules/ --plugin=@trivago/prettier-plugin-sort-imports
+```
+
+> 参考文档 <https://github.com/trivago/prettier-plugin-sort-imports/issues/33>
+> <https://prettier.io/docs/en/plugins.html#using-plugins>

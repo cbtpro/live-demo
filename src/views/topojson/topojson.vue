@@ -6,8 +6,10 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-// import d3TopoJson from '@/components/d3-topo-json/d3-topo-json.vue'
+
 import d3TopoJson from '@/components/d3-topo-json/d3-topo-json'
+
+// import d3TopoJson from '@/components/d3-topo-json/d3-topo-json.vue'
 
 const getJSONUrl = (fileName: string) => {
   const url = `../../assets/${fileName}`

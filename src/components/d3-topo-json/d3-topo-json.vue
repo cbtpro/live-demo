@@ -5,8 +5,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref, toRefs, watch } from 'vue'
 import * as d3 from 'd3'
+import { computed, onMounted, onUnmounted, ref, toRefs, watch } from 'vue'
 
 defineOptions({
   name: 'd3-topo-json',

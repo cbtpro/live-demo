@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
+
 import Home from '@/views/index.vue'
 
 export const routes: RouteRecordRaw[] = [

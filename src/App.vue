@@ -3,6 +3,7 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import HelloWorld from './components/HelloWorld.vue'
 import { RouterView } from 'vue-router'
+
 import MainMenu from '@/components/MainMenu.vue'
 </script>
 
