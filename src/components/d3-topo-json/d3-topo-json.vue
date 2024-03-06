@@ -13,10 +13,10 @@ defineOptions({
 })
 
 interface ITopjsonProps {
-  data: Topo.TopoJSON
+  data?: Topo.TopoJSON
 }
 const props = withDefaults(defineProps<ITopjsonProps>(), {
-  data: null,
+  data: undefined,
 })
 
 const topoRef = ref<HTMLDivElement>()

@@ -15,7 +15,7 @@ const getJSONUrl = (fileName: string) => {
   const url = `../../assets/${fileName}`
   return new URL(url, import.meta.url).href
 }
-const topoJSON = ref<Topo.TopoJSON>(null)
+const topoJSON = ref<Topo.TopoJSON | undefined>()
 
 onMounted(async () => {
   const url = getJSONUrl('topojson.json')
