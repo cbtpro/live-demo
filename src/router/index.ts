@@ -45,6 +45,15 @@ export const routes: RouteRecordRaw[] = [
     },
     component: () => import('@/views/about.vue'),
   },
+  {
+    name: 'v-html',
+    path: '/v-html',
+    meta: {
+      title: 'v-html',
+      requiresAuth: false,
+    },
+    component: () => import('@/views/v-html/index.vue'),
+  },
 ]
 
 const router = createRouter({
