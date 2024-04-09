@@ -37,15 +37,6 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('@/views/geojson/geojson.vue'),
   },
   {
-    name: 'about',
-    path: '/about',
-    meta: {
-      title: '关于',
-      requiresAuth: false,
-    },
-    component: () => import('@/views/about.vue'),
-  },
-  {
     name: 'v-html',
     path: '/v-html',
     meta: {
@@ -53,6 +44,24 @@ export const routes: RouteRecordRaw[] = [
       requiresAuth: false,
     },
     component: () => import('@/views/v-html/index.vue'),
+  },
+  {
+    name: 'rainbows',
+    path: '/rainbows',
+    meta: {
+      title: '彩虹',
+      requiresAuth: false,
+    },
+    component: () => import('@/views/rainbows/index.vue'),
+  },
+  {
+    name: 'about',
+    path: '/about',
+    meta: {
+      title: '关于',
+      requiresAuth: false,
+    },
+    component: () => import('@/views/about.vue'),
   },
 ]
 
