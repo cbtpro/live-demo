@@ -9,24 +9,28 @@ import MainMenu from '@/components/MainMenu.vue'
 
 <template>
   <div class="container">
-    <div class="left">
+    <!-- <div class="top">
       <main-menu />
-    </div>
+    </div> -->
     <div class="content">
       <RouterView />
     </div>
   </div>
 </template>
-
+<style lang="less">
+@import url(@/assets/reset.scss);
+</style>
 <style lang="less" scoped>
 .container {
+  font-size: 36px;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  .left {
-    width: 100px;
+  background-color: #eff2f6;
+  .top {
+    width: 750px;
   }
   .content {
+    width: 750px;
   }
 }
 </style>

@@ -8,8 +8,9 @@ defineOptions({
 })
 </script>
 
-<style lang="less" scoped>
+<style lang="postcss" scoped>
 .view-about {
   color: red;
+  font-size: 36px;
 }
 </style>

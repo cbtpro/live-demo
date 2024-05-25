@@ -1,4 +1,7 @@
 <script setup lang="ts">
+defineOptions({
+  name: 'v-html',
+})
 const TYPE = {
   ENTERPRISE: 'enterprise',
   PERSON: 'person',
@@ -15,20 +18,20 @@ const htmlText = [
 ]
 const htmlStr = htmlText.join('')
 
-const personClickHandle = (dataset) => {
+const personClickHandle = (dataset: DOMStringMap) => {
   const { pid, name } = dataset
   // 根据参数判断是拼装路由，是否跳转、新开
   console.log(pid, name)
 }
-const enterpriseClickHandle = (dataset) => {
+const enterpriseClickHandle = (dataset: DOMStringMap) => {
   const { eid, name } = dataset
   // 根据参数判断是拼装路由，是否跳转、新开
   console.log(eid, name)
 }
-const reportClickHandle = (evt) => {
+const reportClickHandle = (evt: MouseEvent) => {
   evt.preventDefault()
   const { target } = evt
-  const { dataset } = target
+  const { dataset } = target as HTMLElement
   const keys = Object.keys(dataset)
   if (!keys.includes('type')) {
     return

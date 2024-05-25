@@ -9,30 +9,40 @@ export const routes: RouteRecordRaw[] = [
     path: '/',
     meta: {
       title: '首页',
+      icon: 'home-o',
     },
     component: Home,
+  },
+  {
+    name: 'common-nav',
+    path: '/common-nav',
+    meta: {
+      title: '导航',
+      icon: 'home-o',
+    },
+    component: () => import('@/components/common-nav/common-nav.vue'),
+  },
+  {
+    name: 'demo1',
+    path: '/demo1',
+    meta: {
+      title: 'demo1',
+    },
+    component: () => import('@/views/demo1/index.vue'),
   },
   {
     name: 'scroll',
     path: '/scroll',
     meta: {
-      title: 'scroll事件',
+      title: 'scroll',
     },
     component: () => import('@/views/scroll/scroll.vue'),
-  },
-  {
-    name: 'topojson',
-    path: '/topojson',
-    meta: {
-      title: 'd3绘制topojson图',
-    },
-    component: () => import('@/views/topojson/topojson.vue'),
   },
   {
     name: 'geojson',
     path: '/geojson',
     meta: {
-      title: 'd3绘制geojson图',
+      title: 'd3',
     },
     component: () => import('@/views/geojson/geojson.vue'),
   },

@@ -1,9 +1,11 @@
 <template>
   <div class="main-menu">
     <ul class="menu">
-      <li v-for="route in routes" :key="route.path" class="item">
-        <RouterLink :to="route.path">{{ route.meta?.title }}</RouterLink>
-      </li>
+      <van-grid :border="false" :column-num="3">
+        <van-grid-item v-for="route in routes" :key="route.path">
+          <RouterLink :to="route.path">{{ route.meta?.title }}</RouterLink>
+        </van-grid-item>
+      </van-grid>
     </ul>
   </div>
 </template>

@@ -1,4 +1,7 @@
-<script name="color-sequence" setup lang="ts">
+<script setup lang="ts">
+defineOptions({
+  name: 'color-sequence',
+})
 const colors = [
   'rgb(128, 243, 31)',
   'rgb(165, 222, 11)',
