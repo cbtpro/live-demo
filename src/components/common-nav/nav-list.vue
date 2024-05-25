@@ -4,6 +4,8 @@
   </div>
 </template>
 
+<script name="nav-list" setup lang="ts"></script>
+
 <style lang="less" scoped>
 .nav-list {
   display: flex;
@@ -11,8 +13,14 @@
   overflow-x: scroll;
   column-gap: 12px;
   padding: 0 0 32px;
+  position: relative;
   &::-webkit-scrollbar {
     display: none;
+  }
+  .more-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
   }
 }
 </style>

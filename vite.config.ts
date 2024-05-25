@@ -45,13 +45,6 @@ export default defineConfig({
         require('autoprefixer'),
         postcsspxtoviewport8plugin({
           unitToConvert: 'px',
-          // viewportWidth: (file) => {
-          //   const designWidth =
-          //     file.includes('ui6') || file.includes('vant')
-          //       ? 375
-          //       : 750
-          //   return designWidth
-          // },
           viewportWidth: (file) => {
             const condition =
               normalizePath(file).includes(

@@ -1,17 +1,17 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 
-import Home from '@/views/index.vue'
+// import Home from '@/views/index.vue'
 
 export const routes: RouteRecordRaw[] = [
   {
     name: 'home',
     path: '/',
+    redirect: '/common-nav',
     meta: {
       title: '首页',
       icon: 'home-o',
     },
-    component: Home,
   },
   {
     name: 'common-nav',
