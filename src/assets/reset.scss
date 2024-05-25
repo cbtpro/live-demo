@@ -159,7 +159,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -206,16 +206,16 @@ progress {
 }
 
 [type='search'] {
-  -webkit-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px;
 }
 
 ::-webkit-search-decoration {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
+  appearance: button;
   font: inherit;
 }
 
@@ -237,7 +237,7 @@ input,
 button,
 select,
 textarea {
-  -webkit-appearance: none; /* 移除iOS和Android的默认样式 */
+  appearance: none; /* 移除iOS和Android的默认样式 */
   border-radius: 0;
 }
 
@@ -249,7 +249,7 @@ input[type='number'],
 input[type='tel'],
 input[type='search'],
 textarea {
-  -webkit-appearance: none;
+  appearance: none;
   -moz-appearance: none;
   appearance: none;
   outline: none;
