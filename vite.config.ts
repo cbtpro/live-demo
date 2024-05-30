@@ -9,6 +9,10 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { VantResolver, VantImports } from '@vant/auto-import-resolver'
 
+const easyMonitor = require('easy-monitor')
+
+easyMonitor('easy-monitor-live-demo')
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
