@@ -9,11 +9,14 @@
   </div>
 </template>
 
-<script name="nav-item" setup lang="ts">
+<script setup lang="ts">
 interface IProps {
   icon?: string
   title?: string
 }
+defineOptions({
+  name: 'nav-item',
+})
 const props = withDefaults(defineProps<IProps>(), {
   icon: 'apps-o',
   title: '标题',

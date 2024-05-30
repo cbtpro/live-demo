@@ -4,7 +4,11 @@
   </div>
 </template>
 
-<script name="nav-list" setup lang="ts"></script>
+<script setup lang="ts">
+defineOptions({
+  name: 'nav-list',
+})
+</script>
 
 <style lang="less" scoped>
 .nav-list {

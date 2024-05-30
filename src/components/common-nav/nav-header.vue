@@ -6,10 +6,13 @@
   </div>
 </template>
 
-<script name="nav-header" setup lang="ts">
+<script setup lang="ts">
 interface IProps {
   title?: string
 }
+defineOptions({
+  name: 'nav-header',
+})
 const props = withDefaults(defineProps<IProps>(), {
   title: '标题',
 })

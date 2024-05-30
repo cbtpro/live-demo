@@ -7,10 +7,14 @@
   </div>
 </template>
 
-<script name="more-link" setup lang="ts">
+<script setup lang="ts">
 interface IProps {
   text?: string
 }
+
+defineOptions({
+  name: 'more-link',
+})
 const props = withDefaults(defineProps<IProps>(), {
   text: '查看更多',
 })

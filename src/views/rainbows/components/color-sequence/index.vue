@@ -141,20 +141,59 @@ const colors3 = [
 </script>
 
 <template>
-  <center>
-    <font v-for="color in colors" :key="color" :style="{ color: color }">
-      █
-    </font>
-    <font v-for="color in colors1" :key="color" :style="{ color: color }">
-      █
-    </font>
-    <font v-for="color in colors3" :key="color" :style="{ color: color }">
-      █
-    </font>
-    <font v-for="color in colors3" :key="color" :style="{ color: color }">
-      █
-    </font>
-  </center>
+  <div class="color-sequence">
+    <div class="block">
+      <div
+        v-for="color in colors"
+        :key="color"
+        :style="{ color: color }"
+        class="color-block"
+      >
+        █
+      </div>
+    </div>
+    <div class="block">
+      <div
+        v-for="color in colors1"
+        :key="color"
+        :style="{ color: color }"
+        class="color-block"
+      >
+        █
+      </div>
+    </div>
+    <div class="block">
+      <div
+        v-for="color in colors3"
+        :key="color"
+        :style="{ color: color }"
+        class="color-block"
+      >
+        █
+      </div>
+    </div>
+    <div class="block">
+      <div
+        v-for="color in colors3"
+        :key="color"
+        :style="{ color: color }"
+        class="color-block"
+      >
+        █
+      </div>
+    </div>
+  </div>
 </template>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.color-sequence {
+  .block {
+    display: flex;
+    .color-block {
+      font-size: 28px;
+      // width: 64px;
+      // height: 64px;
+    }
+  }
+}
+</style>

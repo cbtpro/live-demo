@@ -16,6 +16,9 @@
 
 <script setup lang="ts">
 import ColorSequence from './components/color-sequence/index.vue'
+defineOptions({
+  name: 'rainbows',
+})
 </script>
 
 <template>

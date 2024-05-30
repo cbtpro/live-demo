@@ -27,7 +27,7 @@
   </div>
 </template>
 
-<script name="common-nav" setup lang="ts">
+<script setup lang="ts">
 import navHeader from './nav-header.vue'
 import moreLink from './more-link.vue'
 import moreButton from './more-button.vue'
@@ -35,6 +35,10 @@ import navList from './nav-list.vue'
 import navItem from './nav-item.vue'
 
 import { routes } from '@/router'
+
+defineOptions({
+  name: 'common-nav',
+})
 const routeList = routes.filter((route) => {
   return route.path !== '/'
 })

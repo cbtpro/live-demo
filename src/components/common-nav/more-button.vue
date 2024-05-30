@@ -4,11 +4,14 @@
   </div>
 </template>
 
-<script name="more-button" setup lang="ts">
+<script setup lang="ts">
 interface IProps {
   text?: string
 }
 
+defineOptions({
+  name: 'more-button',
+})
 const props = withDefaults(defineProps<IProps>(), {
   text: '查看更多',
 })
