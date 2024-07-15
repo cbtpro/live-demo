@@ -142,6 +142,10 @@ const colors3 = [
 
 <template>
   <div class="color-sequence">
+    <div class="title">
+      这是关于如何生成离散颜色序列的教程，用于字体、图形或表格，例如
+      在此处显示的色条中，或本文的标题中。
+    </div>
     <div class="block">
       <div
         v-for="color in colors"
@@ -151,6 +155,11 @@ const colors3 = [
       >
         █
       </div>
+    </div>
+    <div class="title">
+      显然，如果你
+      过度使用这种技术（过度使用，我的意思是完全使用），但你可能会很高兴学习这样做，你会提高你的
+      javascript 技能，以及你的 了解颜色的工作原理。
     </div>
     <div class="block">
       <div
@@ -162,15 +171,26 @@ const colors3 = [
         █
       </div>
     </div>
+    <div class="title">
+      我将在我的代码示例中使用 javacsript，但您可以使用相同的代码
+      任何语言的基本技术，事实上，我最初是用 C
+      语言开发的这些技巧，但现在我使用同样的旧技术
+      C++，Perl，Processing，Java，Flash Actionscript和其他语言的技巧。
+    </div>
     <div class="block">
       <div
-        v-for="color in colors3"
+        v-for="color in colors2"
         :key="color"
         :style="{ color: color }"
         class="color-block"
       >
         █
       </div>
+    </div>
+    <div class="title">
+      为了充分利用本教程，您需要了解一点 Javascript 和一点 HTML。但是，你不会
+      需要知道很多。我的意思是来吧。我什至在本文档中解释了十六进制是如何工作的，以及为什么
+      “#FF0000”是红色的，依此类推......
     </div>
     <div class="block">
       <div
@@ -187,10 +207,14 @@ const colors3 = [
 
 <style lang="less" scoped>
 .color-sequence {
+  .title {
+    color: #000;
+    font-size: 12px;
+  }
   .block {
     display: flex;
     .color-block {
-      font-size: 28px;
+      font-size: 14px;
       // width: 64px;
       // height: 64px;
     }
