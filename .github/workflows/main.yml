@@ -14,7 +14,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
-  actions: write # ✅ 添加这个，确保 deploy-pages 能正确访问 Actions
+  actions: write
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -51,7 +51,7 @@ jobs:
         run: pnpm install
 
       - name: build项目
-        run: pnpm run build:prod
+        run: pnpm run build
 
       - name: 检查 dist 目录是否存在
         run: ls -l dist # 确保 dist 目录存在
